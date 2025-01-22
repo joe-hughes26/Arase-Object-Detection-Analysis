@@ -1,6 +1,6 @@
 # Overview
 
-This repo is intended to allow users to recreate the analysis perform by the Orion Space Solutions team for the paper [CITE].
+This repo is intended to allow users to recreate the analysis perform by the Orion Space Solutions team for a manuscript currently under review for JGR: Space Physics.
 
 The datasets that are leveraged for the statistical analysis include:
 
@@ -14,7 +14,7 @@ For a full list of data sources and information about the OSS Level 2 dataset, s
 Due to the requirement that Arase data not be redistributed, we provide a collection of the OSS Level 2 files with the Arase data removed, and a set of utility function to repopulate the Arase data from their original sources.
 We refer to the stripped data sets as the OSS Level 1.9 dataset. To recreate the Level 2 dataset:
 
-1. Download the zipped level 1.9 Dataset from [INSERT LINK].
+1. Download the zipped level 1.9 Dataset from [Zenodo] (https://zenodo.org/records/14721507).
 1. Move the unzipped netcdf files to the top level of `data/arase_L1_9`, relative to the root of this repo.
 1. Install dependencies with `pip install -r requirements.txt` (Create a new conda environment with python3.11 if needed)
 1. From the root of the repo, run `python data_preperation/create_OSS_L2_perigee_product_from_OSS_L1_9.py`, which will:
